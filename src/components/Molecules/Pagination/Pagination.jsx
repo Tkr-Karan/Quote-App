@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Pagination.module.css";
 
 export const Pagination = ({ currentPage, onPageChange, isLastPage }) => {
   const handlePrev = () => {
@@ -10,23 +11,11 @@ export const Pagination = ({ currentPage, onPageChange, isLastPage }) => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "24px",
-        margin: "16px",
-      }}
-    >
+    <div className={styles["pagination__main-container"]}>
       <div
         onClick={handlePrev}
+        className={styles["pagination__cta-btn"]}
         style={{
-          width: "8rem",
-          textAlign: "center",
-          border: "1px solid",
-          borderRadius: "4px",
-          padding: "4px",
           cursor: "pointer",
         }}
       >
@@ -34,14 +23,11 @@ export const Pagination = ({ currentPage, onPageChange, isLastPage }) => {
       </div>
 
       <div>{currentPage}</div>
+
       <div
         onClick={handleNext}
+        className={styles["pagination__cta-btn"]}
         style={{
-          width: "8rem",
-          textAlign: "center",
-          border: "1px solid",
-          borderRadius: "4px",
-          padding: "4px",
           cursor: isLastPage ? "not-allowed" : "pointer",
         }}
       >

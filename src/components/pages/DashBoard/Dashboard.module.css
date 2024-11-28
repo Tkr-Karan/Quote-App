@@ -1,3 +1,42 @@
+.dashboard__main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 8px;
+  box-shadow: 0 10px 10px grey;
+}
+
+.dashboard__create-quote-cta {
+  font-weight: 500;
+  border: 1px solid #e6dbd0;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #1789fc;
+  color: #e6dbd0;
+  cursor: pointer;
+}
+
+.dashboard__quote-card-conatiner {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.dashboard__quotes-card {
+  border: 2px solid grey;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 4px;
+  box-shadow: 10px 10px 10px black;
+}
+
 .dashboard__username-section {
   text-align: start;
   width: 100px;
@@ -7,9 +46,21 @@
 }
 
 .dashboard__overlay-text {
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  background-color: black;
+  color: white;
+  padding: 4px;
   text-align: center;
-  width: 100px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.quotescard__username-and-date {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
 }

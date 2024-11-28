@@ -1,0 +1,15 @@
+.pagination__main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px;
+}
+
+.pagination__cta-btn {
+  width: 8rem;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 4px;
+}
