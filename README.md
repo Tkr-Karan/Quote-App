@@ -7,7 +7,7 @@
 
 #### Commad for clone application
 
-    `git clone git@github.com:Tkr-Karan/Quote-App.git`
+    git clone git@github.com:Tkr-Karan/Quote-App.git
 
 
 - Install all dependencies using `npm i`
